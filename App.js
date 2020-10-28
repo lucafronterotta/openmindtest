@@ -175,7 +175,7 @@ const App: () => React$Node = () => {
           <SafeAreaView style={{backgroundColor: 'black', flex: 1}}>
             <View style={{justifyContent: 'center', alignItems: 'center'}}>
               <TouchableWithoutFeedback onPress={() => _closeScreenshotModal()}>
-                <Text style={styles.closeButton}>[ CLOSE ]</Text>
+                <Text style={styles.closeButtonDark}>[ CLOSE ]</Text>
               </TouchableWithoutFeedback>
               {screenshotType === 'homepage' &&
               <Image
@@ -231,6 +231,11 @@ const styles = StyleSheet.create({
   closeButton: {
     textAlign: 'center',
     color: 'blue',
+    margin: 20,
+  },
+  closeButtonDark: {
+    textAlign: 'center',
+    color: 'white',
     margin: 20,
   },
 });
